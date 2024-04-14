@@ -5,13 +5,13 @@ on:
   workflow_dispatch
     
 env:
-  ROM_URL: https://cfhcable.dl.sourceforge.net/project/xiaomi-eu-multilang-miui-roms/xiaomi.eu/MIUI-WEEKLY-RELEASES/20.8.6/xiaomi.eu_multi_MIMAX3_20.8.6_v12-10.zip
-  ROM_NAME: MIUI
+  ROM_URL: https://mi.lm379.gq/V13.1.22.11.21.DEV/miui_ENUMA_V13.1.22.11.21.DEV_a055b0aa34_12.0.zip
+  ROM_NAME: Generic
   BUILD_AB: true
-  BUILD_AONLY: true
-  ROM_AONLY: MAX3_Aonly_20.8.6-eu.7z
-  ROM_AB: K20P_AB_20.7.16-eu.7z
-
+  BUILD_AONLY: false
+  ROM_AONLY: miui_ENUMA_V13.1.22.11.21.DEV_a055b0aa34_12.0.7z
+  ROM_AB: miui_ENUMA_V13.1.22.11.21.DEV_a055b0aa34_12.0.7z
+  
 jobs:
   build:
     runs-on: ubuntu-18.04
